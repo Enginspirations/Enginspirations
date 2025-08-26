@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefefe;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #00bfff, #ff69b4); /* Blue to deep purple */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+nav {
+  background: #fff0f5ff1;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #ff1493;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+}
+
+button {
+  background: #ff1493; 
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #e60073;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #00f2ea;
+  text-decoration: none;
+}
+
+.tiktok-videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}

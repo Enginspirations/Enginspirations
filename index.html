@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enginspirations – Discover Your Spark</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Enginspirations</h1>
+    <p>Every great invention starts with a spark of inspiration</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#videos">Videos</a>
+    <a href="#" onclick="showQuiz()">Take the Quiz</a>
+  </nav>
+
+  <section id="about">
+    <h2>Welcome Future Engineer!</h2>
+    <p>Engineering changes the world — from AI and rockets to medicine and farming. Enginspirations is your guide to discovering what kind of engineer YOU were born to be.</p>
+    <button onclick="showQuiz()">🚀 Start the Quiz</button>
+  </section>
+
+  <section id="quiz" style="display: none;">
+    <h2>🎯 What Type of Engineer Are You?</h2>
+    <form id="quizForm">
+
+
+	<p>1. What would you build with unlimited money?</p>
+      <label><input type="radio" name="q1" value="aerospace" /> A spaceship that takes tourists to Mars</label><br />
+      <label><input type="radio" name="q1" value="civil" /> A sustainable floating city</label><br />
+      <label><input type="radio" name="q1" value="biomedical" /> A robotic surgeon</label><br />
+      <label><input type="radio" name="q1" value="automotive" /> The fastest self-driving car</label><br />
+      <label><input type="radio" name="q1" value="software" /> An AI that teaches anything</label><br />
+
+      <p>2. What's your favorite hobby?</p>
+      <label><input type="radio" name="q2" value="geological" /> Rock collecting and hiking</label><br />
+      <label><input type="radio" name="q2" value="audio" /> Making music or podcasts</label><br />
+      <label><input type="radio" name="q2" value="chemical" /> Doing fun science experiments</label><br />
+      <label><input type="radio" name="q2" value="computer" /> Building websites or games</label><br />
+      <label><input type="radio" name="q2" value="marine" /> Exploring oceans and diving</label><br />
+
+      <p>3. You're on a desert island. What's your first move?</p>
+      <label><input type="radio" name="q3" value="electrical" /> Build a solar-powered generator</label><br />
+      <label><input type="radio" name="q3" value="civil" /> Construct a shelter and SOS tower</label><br />
+      <label><input type="radio" name="q3" value="material" /> Find strong materials for tools</label><br />
+      <label><input type="radio" name="q3" value="systems" /> Organize resources and survival tasks</label><br />
+      <label><input type="radio" name="q3" value="propulsion" /> Make a jet-powered raft (why not!)</label><br />
+
+      <p>4. What kind of projects excite you the most?</p>
+      <label><input type="radio" name="q4" value="architecture" /> Designing stunning buildings</label><br />
+      <label><input type="radio" name="q4" value="biochemical" /> Improving health with biology & chemistry</label><br />
+      <label><input type="radio" name="q4" value="nuclear" /> Managing powerful, complex systems</label><br />
+      <label><input type="radio" name="q4" value="agricultural" /> Making farming more efficient</label><br />
+      <label><input type="radio" name="q4" value="software" /> Automating boring things with code</label><br />
+
+      <p>5. If you were in a team, your role would be:</p>
+      <label><input type="radio" name="q5" value="mechatronics" /> The robot builder</label><br />
+      <label><input type="radio" name="q5" value="industrial" /> The optimizer</label><br />
+      <label><input type="radio" name="q5" value="petroleum" /> The resource finder</label><br />
+      <label><input type="radio" name="q5" value="materials" /> The material expert</label><br />
+      <label><input type="radio" name="q5" value="audio" /> The sound engineer</label><br />
+
+         <button type="button" onclick="calculateResult()">🎉 Show My Match</button>
+    </form>
+
+    <div id="result"></div>
+  </section>
+
+  <section id="videos">
+    <h2>🎥 From Our TikTok</h2>
+    <p>Follow us on <strong><a href="https://www.tiktok.com/@enginspirations" target="_blank">@enginspirations</a></strong></p>
+
+ 
+    <div class="tiktok-videos">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@enginspirations/video/7465343069882207495" data-video-id="7465343069882207495" style="max-width: 605px;min-width: 325px;" > 
+  <section> 
+    <a target="_blank" title="@enginspirations" href="https://www.tiktok.com/@enginspirations?refer=embed">@enginspirations</a> 
+    Ever wondered how chemicals turn into the products we use every day? 🧪✨ Chemical engineering is where science meets creativity! Stay tuned for our next video to find out what it’s all about and why it’s such a cool career path!!
+    <!-- hashtags and audio credit -->
+    <a title="chemicalengineering" target="_blank" href="https://www.tiktok.com/tag/chemicalengineering?refer=embed">#chemicalengineering</a>
+    <a title="chemical" target="_blank" href="https://www.tiktok.com/tag/chemical?refer=embed">#chemical</a>
+    <a title="engineering" target="_blank" href="https://www.tiktok.com/tag/engineering?refer=embed">#engineering</a>
+    <a title="engineeringcareer" target="_blank" href="https://www.tiktok.com/tag/engineeringcareer?refer=embed">#engineeringcareer</a>
+    <a title="engineer" target="_blank" href="https://www.tiktok.com/tag/engineer?refer=embed">#engineer</a>
+    <a title="engineeringstudent" target="_blank" href="https://www.tiktok.com/tag/engineeringstudent?refer=embed">#engineeringstudent</a>
+    <a title="studies" target="_blank" href="https://www.tiktok.com/tag/studies?refer=embed">#studies</a>
+    <a title="college" target="_blank" href="https://www.tiktok.com/tag/college?refer=embed">#college</a>
+    <a title="university" target="_blank" href="https://www.tiktok.com/tag/university?refer=embed">#university</a>
+    <a title="aesthetic" target="_blank" href="https://www.tiktok.com/tag/aesthetic?refer=embed">#aesthetic</a>
+    <a title="career" target="_blank" href="https://www.tiktok.com/tag/career?refer=embed">#career</a>
+    <a title="advice" target="_blank" href="https://www.tiktok.com/tag/advice?refer=embed">#advice</a>
+    <a title="stem" target="_blank" href="https://www.tiktok.com/tag/stem?refer=embed">#stem</a>
+    <a title="science" target="_blank" href="https://www.tiktok.com/tag/science?refer=embed">#science</a>
+    <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a>
+    <a title="path" target="_blank" href="https://www.tiktok.com/tag/path?refer=embed">#path</a>
+    <a title="creatorsearchinsights" target="_blank" href="https://www.tiktok.com/tag/creatorsearchinsights?refer=embed">#creatorsearchinsights</a>
+    <a target="_blank" title="♬ i love vlada - harvey" href="https://www.tiktok.com/music/i-love-vlada-7262356106323004193?refer=embed">♬ i love vlada - harvey</a> 
+  </section> 
+</blockquote>
+<script async src="https://www.tiktok.com/embed.js"></script>
+
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@enginspirations/video/7488266201735384338" data-video-id="7488266201735384338" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@enginspirations" href="https://www.tiktok.com/@enginspirations?refer=embed">@enginspirations</a> 🚀 PROPULSION ENGINEERING: the science behind speed, power, and innovation! From jet engines to rockets, this field is what keeps us moving—literally. 🔥⚙️ <a title="futureengineer" target="_blank" href="https://www.tiktok.com/tag/futureengineer?refer=embed">#FutureEngineer</a> <a title="enginspirations" target="_blank" href="https://www.tiktok.com/tag/enginspirations?refer=embed">#enginspirations</a> <a title="stem" target="_blank" href="https://www.tiktok.com/tag/stem?refer=embed">#stem</a> <a title="engineer" target="_blank" href="https://www.tiktok.com/tag/engineer?refer=embed">#engineer</a> <a title="engineering" target="_blank" href="https://www.tiktok.com/tag/engineering?refer=embed">#Engineering</a> <a title="propulsion" target="_blank" href="https://www.tiktok.com/tag/propulsion?refer=embed">#propulsion</a> <a title="aerospace" target="_blank" href="https://www.tiktok.com/tag/aerospace?refer=embed">#aerospace</a> <a title="innovation" target="_blank" href="https://www.tiktok.com/tag/innovation?refer=embed">#Innovation</a> <a title="space" target="_blank" href="https://www.tiktok.com/tag/space?refer=embed">#space</a> <a title="speed" target="_blank" href="https://www.tiktok.com/tag/speed?refer=embed">#speed</a> <a title="engines" target="_blank" href="https://www.tiktok.com/tag/engines?refer=embed">#engines</a> <a title="jet" target="_blank" href="https://www.tiktok.com/tag/jet?refer=embed">#jet</a>  <a title="creatorsearchinsights" target="_blank" href="https://www.tiktok.com/tag/creatorsearchinsights?refer=embed">#creatorsearchinsights</a> <a target="_blank" title="♬ оригинальный звук - DJ Anemia" href="https://www.tiktok.com/music/оригинальный-звук-7467222158433159941?refer=embed">♬ оригинальный звук - DJ Anemia</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+      </blockquote>
+    </div>
+
+    <script async src="https://www.tiktok.com/embed.js"></script>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enginspirations</p>
+    <p>Contact us at: <a href="mailto:enginspirations1@gmail.com">enginspirations1@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
